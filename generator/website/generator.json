@@ -1,0 +1,18 @@
+{
+  "flag": "website",
+  "bower" : {
+    "deps": [
+      "jquery",
+      "bootstrap"
+    ]
+  },
+  "npm": {
+    "deps": [
+      "express"
+    ],
+    "devDeps": [
+      "all the grunts"
+    ]
+  },
+  "globals": ["base", "bower"]
+}

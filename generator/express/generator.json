@@ -1,0 +1,20 @@
+{
+  "flag": "express",
+  "bower" : {
+    "deps": [
+      "jquery",
+      "bootstrap",
+      "etc"
+    ]
+  },
+  "npm": {
+    "deps": {
+      "express": "latest",
+      "mongoose": "latest"
+    },
+    "devDeps": {
+      "grunt": "latest"
+    }
+  },
+  "globals": ["base", "express-base", "bower"]
+}

@@ -1,0 +1,10 @@
+#!/usr/bin/env node
+// vim:ft=javascript:
+var Terrorgen = require('../lib/terrorgen')
+  , colors = require('colors')
+
+//crawl the generators folder and load all the switches
+// output which switches are available as they load.
+var project = new Terrorgen()
+project.loadGeneratorsList()
+project.wouldYouLikeToPlayAGame()

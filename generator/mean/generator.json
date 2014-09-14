@@ -1,0 +1,20 @@
+{
+  "flag": "mean",
+  "bower" : {
+    "deps": [
+      "jquery",
+      "bootstrap",
+      "angular"
+    ]
+  },
+  "npm": {
+    "deps": [
+      "express",
+      "mongoose"
+    ],
+    "devDeps": [
+      "all the grunts"
+    ]
+  },
+  "globals": ["base", "express-mean", "bower"]
+}

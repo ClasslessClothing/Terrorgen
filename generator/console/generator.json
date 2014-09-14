@@ -1,0 +1,6 @@
+{
+  "flag": "console",
+  "bower" : {},
+  "npm": {},
+  "globals": ["base"]
+}

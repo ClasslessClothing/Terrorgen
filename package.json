@@ -1,0 +1,18 @@
+{
+  "name": "terrorgen",
+  "version": "0.0.0",
+  "author": "TerrordactylDesigns",
+  "description": "Project generator",
+  "main": "bin/terrorgen",
+  "scripts": {
+    "start": "node bin/terrorgen"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "dependencies": {
+    "colors": "latest",
+    "ncp": "~0.6.0"
+  }
+}
