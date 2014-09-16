@@ -1,20 +1,18 @@
 {
   "flag": "express",
-  "bower" : {
-    "deps": [
-      "jquery",
-      "bootstrap",
-      "etc"
-    ]
-  },
+  "author": "Terrordactyl Designs",
   "npm": {
-    "deps": {
+    "dependencies": {
       "express": "latest",
+      "body-parser": "latest",
+      "cookie-parser": "latest",
+      "express-session": "latest",
+      "morgan": "latest",
+      "method-override": "latest",
+      "static-favicon": "latest",
+      "connect-mongo": "latest",
       "mongoose": "latest"
-    },
-    "devDeps": {
-      "grunt": "latest"
     }
   },
-  "globals": ["base", "express-base", "bower"]
+  "globals": ["base"]
 }

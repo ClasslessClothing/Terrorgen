@@ -1,0 +1,27 @@
+{
+  "name": "{{title}}",
+  "author": "{{author}}",
+  "dependencies": {
+    {{dependencies}}
+  },
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-env": "latest",
+    "grunt-express": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-contrib-jshint": "latest",
+    "grunt-contrib-compass": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-cssmin": "latest",
+    "grunt-contrib-concat": "latest",
+    "grunt-contrib-copy": "latest",
+    "grunt-concurrent": "latest",
+    "grunt-nodemon": "latest",
+    "grunt-open": "latest",
+    "matchdep": "latest"
+  },
+  "peerDependencies": {
+    "grunt-cli": "latest"
+  }
+}
