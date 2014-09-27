@@ -5,9 +5,7 @@
     { "name": "{{author}}", "email": "" }
   ],
   "dependencies": {
-    "twbs-bootstrap-sass": "latest",
-    "bourbon": "latest",
-    "font-awesome": "latest"
+    {{dependencies}}
   },
   "private": true
 }

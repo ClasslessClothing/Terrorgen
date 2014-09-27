@@ -1,6 +1,4 @@
 {
-  "flag": "console",
-  "bower" : {},
-  "npm": {},
+  "author": "Terrordactyl Designs",
   "globals": ["base"]
 }

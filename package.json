@@ -4,8 +4,8 @@
   "author": "TerrordactylDesigns",
   "description": "Project generator",
   "main": "bin/terrorgen",
-  "scripts": {
-    "start": "node bin/terrorgen"
+  "bin": {
+    "terrorgen": "./bin/terrorgen"
   },
   "repository": {
     "type": "git",
@@ -14,5 +14,6 @@
   "dependencies": {
     "colors": "latest",
     "ncp": "~0.6.0"
-  }
+  },
+  "preferGlobal": true
 }

@@ -1,18 +1,16 @@
 {
-  "flag": "website",
+  "author": "Terrordactyl Designs",
   "bower" : {
-    "deps": [
-      "jquery",
-      "bootstrap"
-    ]
+    "dependencies": {
+      "twbs-bootstrap-sass": "latest",
+      "bourbon": "latest",
+      "font-awesome": "latest"
+    }
   },
   "npm": {
-    "deps": [
-      "express"
-    ],
-    "devDeps": [
-      "all the grunts"
-    ]
+    "dependencies": {
+      "express": "latest"
+    }
   },
   "globals": ["base", "bower"]
 }
