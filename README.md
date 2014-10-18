@@ -1,7 +1,5 @@
 #Terrorgen - Node.js project generator
 
-Notes for me.... What do i need this to solve, do, etc. And how?
-
 When I make apps I have my folder structures and files I like.... I make the same ones over and over. Automate that....
 
 ###Apps I make generally
@@ -30,50 +28,45 @@ When I make apps I have my folder structures and files I like.... I make the sam
 * angular app structure and folder structure
 * in depth express folder structure
 
-
-###differentiation
-If you do an angular build, add some more base folders and files. Sooooo basically should make some form of package system.
-In the generator folder it will get parsed through looking for subfolders. crawl in and copy over whatever files are in that subfolder that was called for
-
-
 ###Generators
-anything in the folder will be capied over. If you include a generate.json file with bower and npm stuff listed in it, we will parse that and update package and bower.json as needed
-This means we also need a way to set a flag to say what package you are even trying to run.
-When running the terrorgen command the flag you put in will be checked against an object or array or whatever that has all the packages flags listed in it.
-and then it will run/copy the appropriate one.
+ANYTHING in the folder will be capied over. Include a generator.json file with 
+bower and npm dependencies listed in it, we will parse that and update package and bower.json as needed.
+
 
     {
-      "flag": "angular",
-      "bower" : {
-        "deps": [
-          "jquery",
-          "bootstrap",
-          "etc"
-        ]
-      },
+      "author": "Terrordactyl Designs",
       "npm": {
-        "deps": [
-          "express",
-          "mongoose",
-          "etc"
-        ],
-        "devDeps": [
-          "all the grunts"
-        ]
-      }
+        "dependencies": {
+          "express": "latest",
+          "body-parser": "latest",
+          "cookie-parser": "latest",
+          "express-session": "latest",
+          "morgan": "latest",
+          "method-override": "latest",
+          "static-favicon": "latest",
+          "connect-mongo": "latest",
+          "mongoose": "latest"
+        }
+      },
+      "bower" : {
+        "dependencies": {
+          "twbs-bootstrap-sass": "latest",
+          "bourbon": "latest",
+          "font-awesome": "latest"
+        }
+      },
+      "globals": ["base", "bower"]
     }
 
-###Global stuff
-Instead of filling each package with the same exact express or such files, make some global ones that live in a <drumroll> generator/global folder.
-In the generate.json file add the globals you need to the globals part?
+###Global re-useable core bundles
+Instead of filling each package with the same exact README or such files, you 
+can make some global bundles that live in the <drumroll /> generator/global folder.
+In the generator.json file add the globals you need to the globals array. Boom.
 
     {
      "flag": ... all those others
-     "globals": ['express-base', 'bower']
+     "globals": ['base', 'bower']
     }
-
-##Generator Skeleton
-Well.... If I have a specific generator structure, might as well make a template for that too right?
 
 ###Install
 
@@ -81,7 +74,26 @@ Well.... If I have a specific generator structure, might as well make a template
 
 ###Use
 
-    terrorgen projectname [-packageflag optional package flag (default will be console app)]
+Path to the root folder you want your application folder to live in then:
+
+    terrorgen
+
+A list of current available generators will appear, type in the name you want:
+
+    Found console generator
+    Found express generator
+    Which generator would you like?
+    express
+
+Enter the name of the project after prompting:
+
+    Enter the name of your project
+    mysuperawesomeproject
+    copying base
+    Global files copied
+    Copying express
+    Generator files copied
+
 
 ####License
 
