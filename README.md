@@ -1,6 +1,11 @@
-#Terrorgen - Node.js project generator
+#Terrorgen - Node.js powered project generator
+
+##Dedicated to Luke Arduini. For tirelessly answering the most basic web and js questions as I taught myself. You will always be remembered and missed.
 
 When I make apps I have my folder structures and files I like.... I make the same ones over and over. Automate that....
+
+This is just a quick and dirty pet project of mine. It has SEVERAL issues, but works perfectly fine for my basic needs.
+Please check TODO.md for known issues and roadmap if someone actually ever ends up using this.
 
 ###Apps I make generally
 * Node console app like bots... or... you know... this app....
@@ -69,6 +74,7 @@ In the generator.json file add the globals you need to the globals array. Boom.
     }
 
 ###Install
+###(currently not on NPM yet) must download and install globally from the downloaded folder
 
     npm install terrorgen -g
 
