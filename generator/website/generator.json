@@ -7,10 +7,5 @@
       "font-awesome": "latest"
     }
   },
-  "npm": {
-    "dependencies": {
-      "express": "latest"
-    }
-  },
   "globals": ["base", "bower"]
 }
